@@ -1,8 +1,10 @@
+#!/usr/bin/env python2.7
+
 # -*- coding: utf-8 -*-
 # @Author: rhys
 # @Date:   2016-11-06 13:41:07
-# @Last Modified by:   rhys
-# @Last Modified time: 2016-11-06 14:14:36
+# @Last Modified by:   stoonejames
+# @Last Modified time: 2016-12-10 08:39:48
 
 
 """
@@ -31,9 +33,9 @@ PIP_CONFIG_PATH = os.path.join(os.environ['HOME'], DIR_NAME)
 
 
 if not os.path.exists(PIP_CONFIG_PATH):
-	os.mkdir(PIP_CONFIG_PATH)
+    os.mkdir(PIP_CONFIG_PATH)
 
 with open(os.path.join(PIP_CONFIG_PATH, CONF_FILE_NAME), 'w+') as f:
-	f.write(INFO_TO_WRITE)
+    f.write(INFO_TO_WRITE)
 
 print('rewrite pip configuration successfully')
