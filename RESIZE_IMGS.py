@@ -4,11 +4,12 @@
 # @Author: rhys
 # @Date:   2016-11-06 14:19:59
 # @Last Modified by:   stoonejames
-# @Last Modified time: 2016-12-10 09:19:04
+# @Last Modified time: 2016-12-10 09:53:39
 
 import Image
 import imghdr
 import os
+import sys
 import argparse
 
 DEFAULT_SIZE = (400, 250)
@@ -19,9 +20,9 @@ parser = argparse.ArgumentParser(
 parser.add_argument(
     "-d", "--directory", help="the directory, default current directory", default=DEFUALT_DIR)
 parser.add_argument("-W", "--width", type=int,
-                    help="the width you want to resize to", default=DEFAULT_SIZE[0])
+                    help="the width you want to resize to, default 400", default=DEFAULT_SIZE[0])
 parser.add_argument("-H", "--height", type=int,
-                    help="the height you want to resize to", default=DEFAULT_SIZE[1])
+                    help="the height you want to resize to, default 250", default=DEFAULT_SIZE[1])
 args = parser.parse_args()
 
 RESULT_FOLDER = r'RESIZED_TO_({}_{})_PICs'.format(args.width, args.height)
@@ -45,7 +46,7 @@ def resize_img(img_name):
         img.filename, RESULT_FOLDER + os.path.sep + resized_name))
 
 if not os.path.exists(args.directory):
-    sys.exit("Path {} does not exists".format(args.directory))
+    sys.exit("-Path {} does not exists".format(args.directory))
 
 abs_resulted_dir = os.path.join(args.directory, RESULT_FOLDER)
 
