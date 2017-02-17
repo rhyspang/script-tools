@@ -9,7 +9,7 @@
 	##### Dcription: 
 	when I use `pip install`,  for the poor connection, it always timeout in China.
 	The script writen in python to write the configuration of pip, using mirror image 
-	source in China(pypi.doubanio.com) 
+	source in China(http://pypi.douban.com/simple) 
 
 	##### Usage
 	```python PIP_CONFIG_REWRITE.py```

@@ -4,23 +4,23 @@
 # @Author: rhys
 # @Date:   2016-11-06 13:41:07
 # @Last Modified by:   stoonejames
-# @Last Modified time: 2016-12-10 08:39:48
+# @Last Modified time: 2017-02-17 21:12:59
 
 
 """
 Description: 
 when I use 'pip install ',  for the poor connection, it always timeout in China.
 The script writen in python to write the configuration of pip, using mirror image 
-source in China(eg. pypi.doubanio.com) 
+source in China(eg. http://pypi.douban.com/simple) 
 """
 
 import os
 
 
 INFO_TO_WRITE = '''[global]  
-index-url = https://pypi.doubanio.com/simple/  
+index-url = http://pypi.douban.com/simple/  
 [install]  
-trusted-host=pypi.doubanio.com  
+trusted-host=http://pypi.douban.com/ 
 disable-pip-version-check = true  
 timeout = 6000  
 '''
