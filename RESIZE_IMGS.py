@@ -6,7 +6,7 @@
 # @Last Modified by:   stoonejames
 # @Last Modified time: 2016-12-10 09:53:39
 
-import Image
+from PIL import Image
 import imghdr
 import os
 import sys
