@@ -8,21 +8,21 @@
 
 
 """
-Description: 
+Description:
 when I use 'pip install ',  for the poor connection, it always timeout in China.
-The script writen in python to write the configuration of pip, using mirror image 
-source in China(eg. http://pypi.douban.com/simple) 
+The script writen in python to write the configuration of pip, using mirror image
+source in China(eg. http://pypi.douban.com/simple)
 """
 
 import os
 
 
-INFO_TO_WRITE = '''[global]  
-index-url = http://pypi.douban.com/simple/  
-[install]  
-trusted-host=http://pypi.douban.com/ 
-disable-pip-version-check = true  
-timeout = 6000  
+INFO_TO_WRITE = '''[global]
+index-url = http://pypi.douban.com/simple/
+[install]
+trusted-host=pypi.douban.com
+disable-pip-version-check = true
+timeout = 6000
 '''
 
 DIR_NAME = '.pip'
