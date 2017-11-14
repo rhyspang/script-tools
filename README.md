@@ -13,6 +13,7 @@
 
 	##### Usage
 	```python PIP_CONFIG_REWRITE.py```
+	```curl -L https://raw.githubusercontent.com/rhyspang/script-tools/master/PIP_CONFIG_REWRITE.py | python```
 
 - #### RESIZE_IMGS
 
