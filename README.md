@@ -55,3 +55,24 @@
 	                    the directory you specified
 	-g, --graphic      	display by chart using matplotlib (if installed)
 	```
+
+- #### gbk2utf8
+
+	##### Description
+	convert file coding format from `gbk` to `utf-8`
+
+	##### Usage
+	```
+	convert file coding format from `gbk` to `utf-8`
+
+    optional arguments:
+    -h, --help            show this help message and exit
+      -d DIRECTORY, --directory DIRECTORY
+                            convert all files in the directory
+      -f FILENAME, --filename FILENAME
+                            file to convert
+      -o OUTPUT, --output OUTPUT
+                        output filename or directory, is output filename when
+                        `-f` argument be used, otherwise, directory name
+
+	```
