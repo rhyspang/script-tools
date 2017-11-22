@@ -59,7 +59,7 @@
 - #### gbk2utf8
 
 	##### Description
-	convert file coding format from `gbk` to `utf-8`
+	convert file coding format from `gbk` to `utf-8`, like `enca`
 
 	##### Usage
 	```
